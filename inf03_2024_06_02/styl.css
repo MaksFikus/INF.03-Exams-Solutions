@@ -1,0 +1,69 @@
+*{
+    font-family: Garamond;
+    margin: 0;
+}
+header{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 80px;
+    float: left;
+}
+.main{
+    width: 80%;
+    height: 600px;
+    float: left;
+}
+.right{
+    background-color: coral;
+    width: 20%;
+    height: 680px;
+    float: right;
+}
+footer{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+img{
+    border-radius: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.chat{
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;
+}
+.jolanta, .krzysztof{
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+.jolanta{
+    background-color: #eee;
+}
+.jolanta img{
+    float: left;
+}
+.krzysztof{
+    background-color: #ccc;
+    text-align: right;
+}
+.krzysztof img{
+    float: right;
+}
+button{
+    background-color: tomato;
+    border: 1px solid darkred;
+    padding: 5px;
+    font-weight: bold;
+}
+input{
+    width: 500px;
+}
