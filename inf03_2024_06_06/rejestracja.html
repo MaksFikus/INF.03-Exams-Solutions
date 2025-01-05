@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Formularz rejestracyjny konferencji <em>Nasze Kwiaty</em></h1>
+    </header>
+    <section class="main">
+        <section class="blok1" id="blok1">
+            <h2>Dane osobowe</h2>
+            <input type="text" placeholder="Wpisz imię..." id="imie" required><br>
+            <input type="text" placeholder="Wpisz nazwisko..." id="nazwisko" required><br>
+            <button type="button" onclick="next1()">Następna karta</button>
+        </section>
+        <section class="blok2" id="blok2">
+            <h2>Dane kontaktowe</h2>
+            <input type="email" placeholder="Twój e-mail..." id="mail"><br>
+            <input type="tel" placeholder="Twój numer telefonu..." id="telefon"><br>
+            <button type="button" onclick="next2()">Następna karta</button>
+        </section>
+        <section class="blok3" id="blok3">
+            <h2>Hasło do logowania</h2>
+            <input type="password" placeholder="Podaj hasło" id="pass1"><br>
+            <input type="password" placeholder="Powtórz hasło" id="pass2"><br>
+            <button type="button" onclick="zatwierdz()">Zatwierdź</button>
+        </section>
+    </section>
+    <footer>
+        <video src="motyl.mp4" controls>Przeglądarka nie obsługuje tego formatu</video>
+    </footer>
+    <footer>
+        <h3>Plan konferencji</h3>
+        <table>
+            <tr>
+                <td>9:00 - 12:00</td>
+                <td>Pielęgnacja roślin</td>
+            </tr>
+            <tr>
+                <td>13:00 - 15:00</td>
+                <td>Targi kwiatowe</td>
+            </tr>
+        </table>
+    </footer>
+    <footer>
+        <p><a href="https://kwiaty.pl">Internetowa kwiaciarnia</a></p>
+    </footer>
+    <footer>
+        <p>Formularz wykonał: Maksymilian Fikus</p>
+    </footer>
+    <script>
+        function next1(){
+            const blok1 = document.getElementById('blok1')
+            const blok2 = document.getElementById('blok2')
+            blok1.style.visibility = 'hidden';
+            blok2.style.visibility = 'visible';
+        }
+        function next2(){
+            const blok2 = document.getElementById('blok2')
+            const blok3 = document.getElementById('blok3')
+            blok2.style.visibility = 'hidden';
+            blok3.style.visibility = 'visible';
+        }
+        function zatwierdz(){
+            const pass1 = document.getElementById('pass1').value
+            const pass2 = document.getElementById('pass2').value
+            const imie = document.getElementById('imie').value
+            const nazwisko = document.getElementById('nazwisko').value
+            if(pass1===pass2){
+                console.log('Witaj' + " " +  `${imie}` + " " + `${nazwisko}`)
+            }
+            else{
+                alert('Podane hasła róznia się')
+            }
+        }
+    </script>
+</body>
+</html>
