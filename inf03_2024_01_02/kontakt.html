@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+    <section class="main">
+        <header>
+            <img src="animacja.gif" alt="Pogotowie komputerowe">
+        </header>
+        <section class="menu">
+            <a href="index.html">Strona główna</a>
+            <a href="kontakt.html">Kontakt</a>
+        </section>
+        <section class="m1">
+
+        </section>
+        <section class="m2">
+            <h2>Kontakt</h2>
+            <table>
+                <tr>
+                    <td>Imię: </td>
+                    <td><input type="text" id="imie" name="imie"></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko: </td>
+                    <td><input type="text" id="nazwisko" name="nazwisko"></td>
+                </tr>
+                <tr>
+                    <td>E-mail: </td>
+                    <td><input type="mail" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Zgłoszenie:
+                    </td>
+                    <td>
+                        <select name="uslugi" id="uslugi">
+                            <option value="Naprawa komputerów">Naprawa komputerów</option>
+                            <option value="Odzyskiwanie danych">Odzyskiwanie danych</option>
+                            <option value="Wirusy">Wirusy</option>
+                            <option value="Konfiguracja LAN">Konfiguracja LAN</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" checked>Wyślij kopię wiadomości</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="reset" onclick="czysc()">Czyść</button>
+                        <button type="button" onclick="wyslij()">Wyślij</button>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <p id="wynik"></p>
+        </section>
+        <section class="m3">
+
+        </section>
+        <footer>
+            <p>Autor: Maksymilian Fikus <i>5C</i></p>
+        </footer>
+    </section>
+    <script>
+        function czysc(){
+            document.getElementById('imie').value = "";
+            document.getElementById('nazwisko').value = "";
+            document.getElementById('email').value = "";
+        }
+        function wyslij(){
+            let imie = document.getElementById('imie').value
+            let nazwisko = document.getElementById('nazwisko').value
+            let email = document.getElementById('email').value
+            let uslugi = document.getElementById('uslugi').value
+            let wynik = document.getElementById('wynik')
+
+            wynik.innerHTML = imie + " " + nazwisko + "<br>" + email.toLowerCase() + "<br> Usługa: " + uslugi;
+        }
+    </script>
+</body>
+</html>

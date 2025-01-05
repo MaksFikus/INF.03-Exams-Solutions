@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekt obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+    <section class="blok">
+        <img src="pszczola.jpg" alt="pszczola na fioletowym kwiatku" id="img1"><br>
+        <label><input type="radio" name="efekt" name="blur" id="blur" value="blur">Blur</label><br>
+        <label><input type="radio" name="efekt" name="sepia" id="sepia" value="sepia">Sepia</label><br>
+        <label><input type="radio" name="efekt" name="negatyw" id="negatyw" value="negatyw">Negatyw</label><br>
+        <button type="button" onclick="efekty()">Zastosuj</button>
+    </section>
+    <section class="blok">
+        <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="img2"><br>
+        <button type="button" onclick="kolorowy()">Kolorowy</button>
+        <button type="button" onclick="czarnobialy()">Czarno-biały</button>
+    </section>
+    <section class="blok">
+        <img src="owoce.jpg" alt="Kosz pełen owoców" id="img3"><br>
+        <input type="range" min="0" max="100" value="100" name="przezroczystosc" id="przezroczystosc"><br>
+        <button type="button" onclick="przezroczystosc()">Zastosuj</button>
+    </section>
+    <section class="blok">
+        <img src="zolw.jpg" alt="Zolw w wodzie" id="img4"><br>
+        <input type="range" min="0" max="250" name="jasnosc" id="jasnosc"><br>
+        <button type="button" onclick="jasnosc()">Zastosuj</button>
+    </section>
+    <footer>
+        <p><a href="http://www.css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: Maksymilian Fikus 5C</p>
+    </footer>
+    <script>
+        function efekty(){
+            const img = document.getElementById("img1")
+            const blur = document.getElementById("blur").checked
+            const sepia = document.getElementById("sepia").checked
+            const negatyw = document.getElementById("negatyw").checked
+            if(blur){
+                img.style.filter ='blur(6px)';
+            }
+            if(sepia){
+                img.style.filter = 'sepia(100%)';
+            } 
+            if(negatyw){
+                img.style.filter = 'invert(100%)';
+            }
+        }
+        function kolorowy(){
+            const img = document.getElementById("img2")
+            img.style.filter = 'none';
+        }
+        function czarnobialy(){
+            const img = document.getElementById("img2")
+            img.style.filter = 'grayscale(100%)';
+        }
+        function przezroczystosc() {
+            const img = document.getElementById("img3")
+            const przezroczystoscValue = document.getElementById('przezroczystosc').value
+            img.style.filter = `opacity(${przezroczystoscValue}%)`;
+	    }
+        function jasnosc(){
+            const img = document.getElementById("img4")
+            const jasnoscValue = document.getElementById("jasnosc").value
+            img.style.filter = `brightness(${jasnoscValue}%)`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma IT</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="logo.png">
+</head>
+<body>
+    <section class="main">
+        <section class="logo">
+            <img src="logo.png" alt="firma it">
+        </section>
+        <section class="menu">
+            <a href="index.html">Strona główna</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </section>
+        <header>
+            <img src="animacja.gif" alt="Usługi informatyczne">
+        </header>
+        <section class="maincontent">
+            <h2>Kontakt</h2>
+            <table>
+                <tr>
+                    <td>Imię: </td>
+                    <td>
+                        <input type="text" name="imie" id="imie">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nazwisko: </td>
+                    <td>
+                        <input type="text" name="nazwisko" id="nazwisko">
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-mail: </td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zgłoszenie</td>
+                    <td>
+                        <textarea name="zgloszenie" cols="40" rows="10" id="zgloszenie"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="zgoda" id="zgoda"> Zapoznałem sie z regulaminem
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="reset" onclick="resetuj()">Resetuj</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="przeslij()">Prześlij</button>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <p id="wynik"></p>
+        </section>
+        <footer>
+            <p>Autor strony: <strong>Maksymilian Fikus 5C</strong></p>
+        </footer>
+    </section>
+    <script>
+        function resetuj() {
+            document.getElementById('imie').value = "";
+            document.getElementById('nazwisko').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('zgloszenie').value = "";
+        }
+
+        function przeslij() {
+            let imie = document.getElementById("imie").value;
+            let nazwisko = document.getElementById("nazwisko").value;
+            let email = document.getElementById("email").value;
+            let zgloszenie = document.getElementById("zgloszenie").value;
+            let zgoda = document.getElementById("zgoda");
+            let wynik = document.getElementById("wynik");
+
+            if (zgoda.checked) {
+                wynik.innerHTML = imie.toUpperCase() + " " + nazwisko.toUpperCase() + "<br>" + " Treść Twojej sprawy: " + zgloszenie;
+            } else {
+                wynik.innerHTML = "<span style='color: red;'>Musisz zapoznać się z regulaminem</span>";
+            }
+        }
+    </script>
+</body>
+</html>

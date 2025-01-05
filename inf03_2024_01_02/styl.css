@@ -1,0 +1,45 @@
+body{
+    background-color: #e0f7fa;
+    font-family: Arial;
+    text-align: center;
+}
+main{
+    width: 95%;
+    margin: auto;
+}
+header{
+    background-color: #00838F;
+    height: 200px;
+}
+.menu{
+    background-color: #006064;
+    padding: 15px;
+}
+.menu a{
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    font-size: 150%;
+}
+.m1, .m2, .m3{
+    height: 350px;
+    width: 33%;
+    float: left;
+}
+footer{
+    background-color: #006064;
+    clear: both;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+ul > li{
+    text-align: left;
+}
+button{
+    background-color: #00838F;
+    color: white;
+}
+button:hover{
+    color: #80DEEA;
+}

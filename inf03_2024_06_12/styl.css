@@ -1,0 +1,38 @@
+*{
+    font-family: serif;
+    text-align: center;
+    margin: 0;
+}
+header, footer{
+    background-color: indigo;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    clear: both;
+}
+.blok{
+    width: 50%;
+    height: 470px;
+    float: left;
+}
+img{
+    padding: 3px;
+    margin: 10px;
+    border: 2px dashed slateblue;
+}
+a{
+    color: white;
+}
+button{
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: indigo;
+}
+input[type="range"]{
+    width: 80%;
+}

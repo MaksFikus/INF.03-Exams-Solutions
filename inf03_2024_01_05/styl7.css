@@ -1,0 +1,53 @@
+body{
+    font-family: Cambria;
+}
+.left1, .left2{
+    background-color: #e1bee7;
+    width: 25%;
+    float: left;
+}
+.left1{
+    height: 400px;
+}
+.left2{
+    height: 330px;
+}
+.right1, .right2{
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+    float: right;
+}
+.right1{
+    background-color: #9c64a6;
+    color: white;
+    height: 150px;
+    letter-spacing: 5px;
+}
+.right2{
+    color: indigo;
+    height: 580px;
+}
+footer{
+    background-color: #9c64a6;
+    color: white;
+    padding: 10px;
+    clear: both;
+}
+h2{
+    text-align: center;
+}
+ul li{
+    list-style-type: circle;
+}
+img{
+    padding: 4px;
+    margin: 15px;
+}
+img:hover{
+    padding: 3px;
+    border: 1px dashed indigo;
+}
+#mainsite{
+    padding: 25px;
+}

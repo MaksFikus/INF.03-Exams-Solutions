@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon kosmetyczny</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <section class="left1">
+        <h2>Nasza oferta</h2>
+        <ol>
+            <li><a href="twarz.html">Oszczyszanie twarzy</a></li>
+                <ul>
+                    <li>Peeling</li>
+                    <li>Maska</li>
+                </ul>
+            <li>Masaz</li>
+            <li>Makijaz</li>
+        </ol>
+        <a href="index.html" id="mainsite">Strona główna</a>
+    </section>
+    <section class="right1">
+        <h1>Usługi kosmetyczne</h1>
+    </section>
+    <section class="right2">
+        <h3>Kalkulator ceny wizyty</h3>
+        <input type="checkbox" name="peeling" id="peeling">Peeling <br>
+        <input type="checkbox" name="maska" id="maska">Maska <br>
+        <input type="checkbox" name="masaz" id="masaz">Masaz twarzy <br>
+        <input type="checkbox" name="makijaz" id="makijaz">Makijaz <br>
+        <button type="button" onclick="skrypt()">Oblicz cenę</button>
+        <p id="wynik"></p>
+    </section>
+    <section class="left2">
+        <img src="obraz1.jpg" alt="Personel">
+    </section>
+    <footer>
+        <p>Autor: Maksymilian Fikus 5C</p>
+    </footer>
+    <script>
+        function skrypt(){
+            let wynik = document.getElementById('wynik')
+            let cena = 0;
+            if(document.getElementById('peeling').checked){
+                cena = cena + 45;
+            }
+            if(document.getElementById('maska').checked){
+                cena = cena + 30;
+            }
+            if(document.getElementById('masaz').checked){
+                cena = cena + 20;
+            }
+            if(document.getElementById('makijaz').checked){
+                cena = cena + 50;
+            }
+            wynik.innerHTML = "Cena zabiegów: " + cena;
+        }
+    </script>
+</body>
+</html>
