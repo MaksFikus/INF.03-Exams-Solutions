@@ -42,12 +42,25 @@
         </section>
         <label for="">Wpisz wiadomość:
             <input type="text" name="wiad" id="wiad">
-            <button type="button">Wyślij</button>
+            <button type="button" onclick="wyslij()">Wyślij</button>
         </label><br>
-        <button type="button">Generuj losową odpowiedź</button>
+        <button type="button" onclick="generuj()">Generuj losową odpowiedź</button>
     </section>
     <footer>
         <h5>Chat wykonał: Maksymilian Fikus</h5>
     </footer>
+    <script>
+        const odpowiedzi = [
+	        "Świetnie!",
+	        "Kto gra główną rolę?",
+	        "Lubisz filmy Tego reżysera?",
+	        "Będę 10 minut wcześniej",
+	        "Może kupimy sobie popcorn?",
+	        "Ja wolę Colę",
+	        "Zaproszę jeszcze Grześka",
+	        "Tydzień temu też byłem w kinie na Diunie",
+	        "Ja funduję bilety"
+    	];
+    </script>
 </body>
 </html>
