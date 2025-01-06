@@ -50,17 +50,62 @@
         <h5>Chat wykonał: Maksymilian Fikus</h5>
     </footer>
     <script>
-        const odpowiedzi = [
-	        "Świetnie!",
-	        "Kto gra główną rolę?",
-	        "Lubisz filmy Tego reżysera?",
-	        "Będę 10 minut wcześniej",
-	        "Może kupimy sobie popcorn?",
-	        "Ja wolę Colę",
-	        "Zaproszę jeszcze Grześka",
-	        "Tydzień temu też byłem w kinie na Diunie",
-	        "Ja funduję bilety"
-    	];
+        const odp = [
+            "Świetnie!",
+            "Kto gra główną rolę?",
+            "Lubisz filmy Tego reżysera?",
+            "Będę 10 minut wcześniej",
+            "Może kupimy sobie popcorn?",
+            "Ja wolę Colę",
+            "Zaproszę jeszcze Grześka",
+            "Tydzień temu też byłem w kinie na Diunie",
+            "Ja funduję bilety"
+        ];
+
+        function wyslij() {
+            const messageInput = document.getElementById('wiad');
+            const chat = document.getElementById('chat');
+
+            const jolantaSec = document.createElement('section');
+            jolantaSec.classList.add('jolanta');
+
+            const jolantaImg = document.createElement('img');
+            jolantaImg.src = 'Jolka.jpg';
+            jolantaImg.alt = 'Jolanta Nowak';
+
+            const jolantaP = document.createElement('p');
+            jolantaP.textContent = messageInput.value;
+
+            jolkaDiv.appendChild(jolkaImg);
+            jolkaDiv.appendChild(jolkaP);
+            chat.appendChild(jolkaDiv);
+
+            chat.scrollTop = chat.scrollHeight;
+
+            messageInput.value = '';
+        }
+
+        function generuj() {
+            const randomIndex = Math.floor(Math.random() * odp.length);
+            const randomResponse = odp[randomIndex];
+            const chat = document.getElementById('chat');
+
+            const krzysztofSec = document.createElement('section');
+            krzysztofkSec.classList.add('krzysztof');
+
+            const krzysztofImg = document.createElement('img');
+            krzysztofImg.src = 'Krzysiek.jpg';
+            krzysztofImg.alt = 'Krzysztof Łukasiński';
+
+            const krzysztofP = document.createElement('p');
+            krzysztofP.textContent = randomResponse;
+
+            krzysztofSec.appendChild(krzysztofImg);
+            krzysztofSec.appendChild(krzysztofP);
+            chat.appendChild(krzysztofSec);
+
+            chat.scrollTop = chat.scrollHeight;
+        }
     </script>
 </body>
 </html>
