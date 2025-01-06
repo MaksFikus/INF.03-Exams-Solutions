@@ -17,7 +17,7 @@
             <li>Tematyczne
                 <ol>
                     <li>Turystyczny</li>
-                    <li>Zeglarski</li>
+                    <li>Żeglarski</li>
                     <li>Filatelistyczny</li>
                     <li>Hodowla zwierzątek domowych</li>
                 </ol>
@@ -30,17 +30,17 @@
         <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
     </section>
     <section class="main">
-        <section class="chat">
+        <section class="chat" id="chat">
             <section class="jolanta">
-                <img src="Jolka.jpg" alt="">
-                <p>Cześć idziesz jutro do kina?</p>
+                <img src="Jolka.jpg" alt="Jolanta Nowak">
+                <p>Cześć, idziesz jutro do kina?</p>
             </section>
             <section class="krzysztof">
-                <img src="Krzysiek.jpg" alt="">
-                <p>Tak! A ty?</p>
+                <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+                <p>Tak! A Ty?</p>
             </section>
         </section>
-        <label for="">Wpisz wiadomość:
+        <label for="wiad">Wpisz wiadomość:
             <input type="text" name="wiad" id="wiad">
             <button type="button" onclick="wyslij()">Wyślij</button>
         </label><br>
@@ -53,18 +53,20 @@
         const odp = [
             "Świetnie!",
             "Kto gra główną rolę?",
-            "Lubisz filmy Tego reżysera?",
-            "Będę 10 minut wcześniej",
+            "Lubisz filmy tego reżysera?",
+            "Będę 10 minut wcześniej.",
             "Może kupimy sobie popcorn?",
-            "Ja wolę Colę",
-            "Zaproszę jeszcze Grześka",
-            "Tydzień temu też byłem w kinie na Diunie",
-            "Ja funduję bilety"
+            "Ja wolę Colę.",
+            "Zaproszę jeszcze Grześka.",
+            "Tydzień temu też byłem w kinie na Diunie.",
+            "Ja funduję bilety."
         ];
 
         function wyslij() {
             const messageInput = document.getElementById('wiad');
             const chat = document.getElementById('chat');
+
+            if (messageInput.value.trim() === "") return; // Sprawdzanie pustej wiadomości
 
             const jolantaSec = document.createElement('section');
             jolantaSec.classList.add('jolanta');
@@ -76,9 +78,9 @@
             const jolantaP = document.createElement('p');
             jolantaP.textContent = messageInput.value;
 
-            jolkaDiv.appendChild(jolkaImg);
-            jolkaDiv.appendChild(jolkaP);
-            chat.appendChild(jolkaDiv);
+            jolantaSec.appendChild(jolantaImg);
+            jolantaSec.appendChild(jolantaP);
+            chat.appendChild(jolantaSec);
 
             chat.scrollTop = chat.scrollHeight;
 
@@ -91,7 +93,7 @@
             const chat = document.getElementById('chat');
 
             const krzysztofSec = document.createElement('section');
-            krzysztofkSec.classList.add('krzysztof');
+            krzysztofSec.classList.add('krzysztof');
 
             const krzysztofImg = document.createElement('img');
             krzysztofImg.src = 'Krzysiek.jpg';
