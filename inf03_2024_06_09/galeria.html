@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro turystyczne</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Zwiedzamy polskę</h1>
+    </header>
+    <section class="left">
+        <button type="button" onclick="poprzednie()">&lt;</button>
+    </section>
+    <section class="middle">
+        <img src="1.jpg" alt="Aktywne zdjęcie" id="zdjecie">
+    </section>
+    <section class="right">
+        <button type="button" onclick="nastepne()">&gt;</button>
+    </section>
+    <section class="miniatury">
+        <img src="1.jpg" alt="Gdańsk">
+        <img src="2.jpg" alt="Kraków">
+        <img src="3.jpg" alt="Niedzica">
+        <img src="4.jpg" alt="Pieniny">
+        <img src="5.jpg" alt="Szklarska Poręba">
+        <img src="6.jpg" alt="Tatry">
+        <img src="7.jpg" alt="Wrocław">
+    </section>
+    <footer>
+        <h3>Autorem galerii jest: </h3>
+        <p>Maksymilian Fikus</p>
+        <a href="http://pixabay.com" target="_blank">Więcej zdjęć</a>
+    </footer>
+    <script>
+        let zdjecieindex = 1;
+        const zdjecia = 7;
+        function poprzednie(){
+            zdjecieindex--;
+            if(zdjecieindex < 1){
+                zdjecieindex = zdjecia;
+            }
+            const zdjecie = document.getElementById('zdjecie')
+            zdjecie.src = zdjecieindex + ".jpg"
+        }
+        function nastepne(){
+            zdjecieindex++;
+            if(zdjecieindex > 7){
+                zdjecieindex = 1;
+            }
+            const zdjecie = document.getElementById('zdjecie')
+            zdjecie.src = zdjecieindex + ".jpg"
+        }
+    </script>
+</body>
+</html>

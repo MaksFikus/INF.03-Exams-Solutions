@@ -1,0 +1,57 @@
+*{
+    font-family: Georgia;
+    margin: 0;
+    color: white;
+}
+header, footer{
+    background-color: maroon;
+    text-align: center;
+    padding: 2px;
+}
+.left, .middle, .right{
+    background-color: lightsalmon;
+    height: 527px;
+}
+.left, .right{
+    width: 15%;
+    float: left;
+}
+.middle{
+    width: 70%;
+    float: left;
+}
+.miniatury{
+    background-color: maroon;
+    clear: both;
+    height: 70px;
+}
+button{
+    background-color: lightsalmon;
+    color: maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+.miniatury img{
+    height: 70px;
+    animation: animacja 4s;
+}
+@keyframes animacja {
+    from{
+        padding-left: 50px;
+    }
+    to{
+        padding-left: 0px;
+    }
+}
+.middle img{
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+    transition: transform 5s ease;
+}
+.middle img:hover{
+    transform: scale(1.2);
+}
