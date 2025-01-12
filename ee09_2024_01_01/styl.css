@@ -1,0 +1,44 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: crimson;
+}
+header{
+    color: white;
+    text-align: center;
+    height: 370px;
+}
+.mecze{
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border: 1 px solid black;
+    border-radius: 10px;
+    float: left;
+}
+.mecze:hover{
+    border: 1px solid white;
+}
+.main{
+    background-color: whitesmoke;
+    height: 50px;
+    clear: both;
+}
+.left{
+    background-color: whitesmoke;
+    width: 70%;
+    height: 230px;
+    float: left;
+}
+.prawy{
+    background-color: whitesmoke;
+    width: 30%;
+    height: 230px;
+    text-align: right;
+    float: left;
+}
+h2{
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+}
