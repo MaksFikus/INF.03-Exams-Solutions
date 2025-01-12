@@ -1,0 +1,45 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+header, footer{
+    background-color: #ba6b6c;
+    color: white;
+    padding: 7px;
+}
+.left, .right{
+    background-color: #ef9a9a;
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+.middle{
+    background-color: mistyrose;
+    width: 60%;
+    height: 500px;
+    float: left;
+}
+.dane{
+    background-color: mistyrose;
+    padding: 50px;
+}
+ol{
+    list-style-type: upper-roman;
+}
+li{
+    text-align: left;
+}
+h2::first-letter{
+    font-size: 170%;
+    color: maroon;
+}
+table{
+    margin: auto;
+    width: 80%;
+    border: 1px solid maroon;
+}
+img{
+    height: 120px;
+    margin: 7px;
+    box-shadow: 7px 7px 7px dimgray;
+}
