@@ -44,7 +44,10 @@ Repozytorium będzie zawierać rozwiązane przeze mnie egzaminy INF.03
       [Zdjęcie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_06_06/Nasze%20Kwiaty.png) |
       [Polecenie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_06_06/INF.03-06-24.06-SG.pdf)
       #
-    - 09 (JS) - [Biuro turystyczne](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_06_09)
+    - 09 (JS) - [Biuro turystyczne](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_06_09)<br>
+      [Zdjęcie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_06_09/Galeria.png) |
+      [Polecenie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_06_09/INF.03-09-24.06-SG.pdf)
+      #
     - 11 (PHP) - [Hodowla świnek](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_06_11)
     - 12 (JS) - [Efekty obrazu](https://github.com/MaksFikus/INF.03-Exams-Solutions/tree/main/inf03_2024_06_12)
     
