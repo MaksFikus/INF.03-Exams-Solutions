@@ -28,7 +28,9 @@ Repozytorium będzie zawierać rozwiązane przeze mnie egzaminy INF.03
       [Polecenie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_01_06/INF.03-06-24.01-SG.pdf)
       #
   - Czerwiec
-    - 02 (JS) - [Chat](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_06_02)
+    - 02 (JS) - [Chat](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_06_02)<br>
+      [Zdjecie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_06_02/Chat.png)
+      [Polecenie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_06_02/INF.03-02-24.06-SG.pdf)
       #
     - 03 (PHP) - [Poziom Rzek](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_06_03) <br>
       [Zdjęcie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_06_03/Poziom%20Rzek.png) |
