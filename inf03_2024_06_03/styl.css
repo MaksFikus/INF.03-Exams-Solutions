@@ -1,0 +1,52 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+.menu{
+    background-color: navy;
+    padding: 20px;
+    clear: both;
+}
+label{
+    color: silver;
+    margin: 50px;
+}
+label:hover{
+    color: white;
+    text-decoration: underline;
+}
+.left, .right{
+    background-color: azure;
+    height: 550px;
+}
+.left{
+    width: 70%;
+    float: left;
+}
+.prawy{
+    width: 30%;
+    float: left;
+}
+footer{
+    background-color: navy;
+    color: white;
+    clear: both;
+}
+table{
+    border: 1px solid navy;
+    margin: auto;
+    width: 70%;
+}
+tr:hover{
+    background-color: skyblue;
+}
+.prawy img{
+    width: 90%;
+}
