@@ -15,7 +15,10 @@ Repozytorium będzie zawierać rozwiązane przeze mnie egzaminy INF.03
       [Zdjecie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_01_02/Komputery.png)
       [Polecenia](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_01_02/INF.03-02-24.01-SG.pdf)
       #
-    - 04 (PHP) - [Terminarz](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_01_04)
+    - 04 (PHP) - [Terminarz](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_01_04)<br>
+      [Zdjecie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_01_04/Terminarz.png)
+      [Polecenie](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/blob/main/inf03_2024_01_04/inf_03_2024_01_04_SG.pdf)
+      #
     - 05 (JS) - [Salon kosmetyczny](https://github.com/MaksFikus/INF.03-Exams-Solutions/tree/main/inf03_2024_01_05)
     - 06 (PHP) - [Biuro podróży](https://github.com/fikusmaksymilian/INF.03-Exams-Solutions/tree/main/inf03_2024_01_06)
    
