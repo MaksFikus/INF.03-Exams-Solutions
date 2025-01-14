@@ -1,0 +1,14 @@
+zapytanie 1: wybierające wszystkie pola z tabeli pogoda dla miast o id równym 2, posortowane
+malejąco według daty prognozy
+SELECT * FROM pogoda where miasta_id = 2 ORDER BY data_prognozy DESC;
+
+zapytanie 2: wybierające jedynie pola id oraz temperatura_dzien z tabeli pogoda dla tych rekordów,
+dla których ciśnienie jest poniżej 1000 hPa
+SELECT * FROM pogoda where miasta_id = 2 ORDER BY data_prognozy DESC;
+
+zapytanie 3: wybierające jedynie pola data_prognozy, opady z tabeli pogoda oraz nazwa z tabeli
+miasta dla temperatur dziennych powyżej 20 stopni. Zapytanie wykorzystuje relację
+SELECT data_prognozy, opady, miasta.nazwa FROM pogoda JOIN miasta ON miasta.id = pogoda.miasta_id WHERE temperatura_dzien > 20;
+
+zapytanie 4: usuwające z tabeli pogoda rekord o id równym 8
+DELETE FROM pogoda WHERE id = 8;
